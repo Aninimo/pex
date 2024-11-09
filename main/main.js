@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 })
 
-fetch('/blogs.json')
+fetch('blogs.json')
   .then(response => response.json())
   .then(data => {
     const allBlogsContainer = document.getElementById('allBlogsContainer');
@@ -51,7 +51,7 @@ fetch('/blogs.json')
     console.error('Erro ao buscar os blogs:', error);
 });
 
-fetch('/blogs.json')
+fetch('blogs.json')
   .then(response => response.json())
   .then(data => {
     const blogsContainer = document.getElementById('blogs-container');
