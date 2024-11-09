@@ -114,7 +114,7 @@ fetch('food.json')
     const foodContainer = document.getElementById('foods-container');
     
     if (data && Array.isArray(data) && data[0] && Array.isArray(data[0].foods)) {
-      const firstThreeFoods = data.foods.slice(0, 2);
+      const firstThreeFoods = data[0].foods.slice(0, 2);
 
       firstThreeFoods.forEach(food => {
         const foodElement = document.createElement('div');
