@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 })
 
-fetch('blogs.json')
+fetch('/blogs.json')
   .then(response => response.json())
   .then(data => {
     const allBlogsContainer = document.getElementById('allBlogsContainer');
